@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto2</title>
+    <link rel="stylesheet" href="./libs/bootstrap/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/estilos.css">
+     <script src="https://kit.fontawesome.com/b240a94ff6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-header"> 
+        <ul class="nav-links">
+            <li><a  href="index.html"><i class="fas fa-home" ></i> Inicio</a></li>
+             <li><a  href="actividades.html"><i class="fas fa-running"></i> Actividades</a></li>
+            <li><a  href="horarios.html"><i class="fas fa-calendar-alt"></i> Horarios</a></li>
+            <li> <a  href="contacto2.html"><i class="fas fa-at"></i>Contacto</a> </li>
+        </ul>
+    </nav>
+</header>
+
+<h1 class="Encabezado">Gimnasio " + ENERGIA..."</h1>
+<h1>Contacto</h1>
+<menu>
+
+<h2>Ingresa tus datos</h2>
+
+
+
+
+
+
+
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Apellidos</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Nombres</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">E - mail</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  required>
+            
+          </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <label  for="validationCustom04" class="form-label">Actividad que te gustaría asistir:    </label> 
+          <div class="form-check">
+            
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="funcional">
+              <label class="form-check-label" for="inlineCheckbox1">Funcinal</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Stretching">
+              <label class="form-check-label" for="inlineCheckbox2">Stretching</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Musculación" >
+              <label class="form-check-label" for="inlineCheckbox3">Musculación</label>
+            </div>
+      
+            </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Turno</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">...</option>
+            <option value="M">Mañana</option>
+            <option value="T">Tarde</option>
+            <option value="V">Vespertino</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor ingrese el turno que le sea de su preferencia
+          </div>
+          
+          
+        
+        <div class="col-12">
+          <br>
+          <button class="btn btn-primary" type="submit" onclick="return enviarFormulario();">Enviar</button>
+          <button class="btn btn-primary" type="reset" >Borrar </button>
+
+         
+
+
+
+        </div>
+      </form>
+      
+      
+    <script src="./libs/bootstrap/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="./js/contacto2.js"></script>
+  </body>
+</html>
